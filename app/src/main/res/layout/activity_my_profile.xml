@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.co.codoc.enableexpert.MyProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/back_icon"
+                android:onClick="back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"/>
+            <in.co.codoc.enableexpert.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="22dp"
+                android:text="Profile"
+                android:textColor="@color/colorPrimary"/>
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:padding="7dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:onClick="edit"
+                android:src="@drawable/edit_icon"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_bg"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/profile"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <in.co.codoc.enableexpert.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Ashik Sunny"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <in.co.codoc.enableexpert.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qualification"
+            android:text="MBBS"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/location"
+                android:src="@drawable/ic_map_marker_grey600_36dp"/>
+            <in.co.codoc.enableexpert.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/textcolor"
+                android:id="@+id/location"
+                android:textSize="16dp"
+                android:text="Location not Updated"/>
+
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <in.co.codoc.enableexpert.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textcolor"
+            android:id="@+id/about_me"
+            android:textSize="14dp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

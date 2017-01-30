@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <size
+                android:height="53dp"
+                android:width="53dp"/>
+            <gradient
+                android:endColor="#9FEADF"
+                android:startColor="#62C1D3"
+                android:angle="180"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/ic_account_white_48dp"
+            android:gravity="center_horizontal|center_vertical" />
+    </item>
+
+</layer-list>

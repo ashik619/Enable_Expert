@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid
+                android:color="@color/white"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+        android:gravity="center"
+        android:src="@drawable/enable_logo_splash"
+        android:scaleHeight="120dp"
+        android:scaleWidth="200dp" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/btn"
+    android:background="@drawable/list_item_bg">
+    <FrameLayout
+        android:layout_width="52.5dp"
+        android:layout_height="52.5dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profilepicView"
+            android:layout_margin="3dp"
+            android:padding="0dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_width="52.5dp"
+            android:layout_height="52.5dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/thumbnail_rounded_imageview_frame"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true">
+        <in.co.codoc.enable.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/report_id"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:text="XR728GHSKS"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:id="@+id/docname"
+            android:layout_below="@+id/report_id"
+            android:textColor="@color/textcolor"
+            android:text="Referred to Dr. "
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+
+
+</RelativeLayout>

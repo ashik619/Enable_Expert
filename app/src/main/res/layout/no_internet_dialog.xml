@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/popup_element"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Error"
+        android:textSize="18dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Check Internet"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="25dp"/>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="Mobile Data"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/data"
+        android:background="@drawable/button_bg"
+        android:onClick="okbutton"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Wifi"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/wifi"
+            android:background="@drawable/button_bg"
+            android:onClick="okbutton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
